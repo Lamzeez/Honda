@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Sales Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <script src="fontawesome/js/all.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90));
+            background-size: 1000% 1000%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .navbar {
+            transition: background-color 0.3s;
+        }
+        .navbar:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        h1, h2 {
+            font-weight: 700;
+        }
+        .text-white {
+            transition: color 0.3s;
+        }
+        .text-white:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .contact-card {
+            margin: 20px 0;
+        }
+        .d-flex {
+            align-items: center;
+        }
+        .semi-transparent {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html" ><i class="fa-solid fa-house"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="profile.html" ><i class="fa-solid fa-user"></i> Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="services.html"><i class="fa-solid fa-handshake-angle"></i> Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html"><i class="fa-regular fa-address-book"></i> Contacts</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <a href="login.html" class="text-decoration-none text-white"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </span>
+          </div>
+        </div>
+    </nav>
+
+    <div class="content container-fluid">
+        <div class="row justify-content-center pt-5 mt-5">
+            <div class="col-md-10">
+                <div class="row">
+                <div class="col-md-5">
+                        <div class="card-body p-3" style="border-radius: 10px; background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 255, 204, 0.8));">
+                            <h2 class="text-white">Services List</h2>
+                            <div class="w-100 p-3 mb-2" style="border-radius: 10px; background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90))">
+                                <a href="cleaningService.html" class="btn text-white" style="padding: 0px;"><h5><i class="fa-regular fa-circle-right"></i><span style="font-weight:400; text-decoration: none;"> Cleaning Services</span></h5></a>
+                            </div>
+                            <div class="w-100 p-3 mb-2 semi-transparent text-white" style="border-radius: 10px; background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90))">
+                                <h5><i class="fa-regular fa-circle-right"></i><span style="font-weight:400; text-decoration: none;"> Product Sales Services</span></h5>
+                            </div>
+                            <div class="w-100 p-3 mb-2" style="border-radius: 10px; background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90))">
+                                <a href="tuningUpService.html" class="btn text-white" style="padding: 0px;"><h5><i class="fa-regular fa-circle-right"></i><span style="font-weight:400; text-decoration: none;"> Tuning Up Services</span></h5></a>
+                            </div>
+                            <div class="w-100 p-3 mb-2" style="border-radius: 10px; background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90))">
+                                <a href="paintingService.html" class="btn text-white" style="padding: 0px;"><h5><i class="fa-regular fa-circle-right"></i><span style="font-weight:400; text-decoration: none;"> Painting Services</span></h5></a>
+                            </div>
+                        </div>
+                    <div class="card-body text-center p-5 my-2" style="border-radius: 10px; background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 255, 204, 0.8));">
+                        <i class="fa-solid fa-headphones" style="font-size: 60px"></i><br>
+                        <h4>Have a question?</h4>
+                        <a href="contact.html" class="btn btn-light shadow text-white" style="border: none; background: linear-gradient(45deg, rgb(28, 56, 90), rgb(150, 150, 196), rgb(0, 92, 197)); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 255, 204, 0.8));"><h6>Contact Us</h6><i class="fa-solid fa-message"></i></a><br><br>
+                        <p><i class="fa-solid fa-phone"></i> (+63) 123456789</p>
+                        <p><i class="fa-solid fa-envelope"></i> hondaa@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-7 text-white">
+                    <img src="sales2.jpg" width="100%">
+                    <h4 class="mt-3">Product Sales Service</h4>
+                    <p>At Honda, we pride ourselves on offering a wide range of high-quality products designed to enhance your riding experience. From gear to accessories, we have everything you need to ride safely and in style.</p>
+                    <br>
+                    <h4>Our Product Sales Service Includes:</h4>
+                    <ul>
+                        <li>Motorcycle Gear</li>
+                        <li>Accessories</li>
+                        <li>Maintenance Products</li>
+                        <li>Parts Sales</li>
+                        <li>Custom Orders</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mx-5">
+                <div class="row">
+                    <div class="col-md-10 mx-5 px-5 pb-5 text-white">
+                        <h2 class="pt-5">Why Choose Us for Your Motorcycle Products?</h2>
+                        <ul>
+                            <li><strong>Quality Assurance:</strong> We offer only the best brands and products to ensure safety and reliability.</li>
+                            <li><strong>Expert Advice:</strong> Our knowledgeable staff is here to help you find exactly what you need.</li>
+                            <li><strong>Competitive Pricing:</strong> Enjoy great prices on a wide range of products, with frequent promotions.</li>
+                        </ul>
+                        <p>Elevate your riding experience with our premium motorcycle products! Contact us today or visit our shop to explore our full range of offerings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card text-center bg-dark text-white" style="border-radius: 0px;">
+        <div class="card-body">
+            <h5 class="card-title">Honda</h5>
+            <p class="card-text">All Rights Reserved.</p>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/" class="text-white me-3" style="text-decoration: none;"><i class="fa-brands fa-facebook fa-lg"></i> Facebook</a>
+              <a href="https://www.instagram.com/" class="text-white me-3" style="text-decoration: none;"><i class="fa-brands fa-instagram fa-lg"></i> Instagram</a>
+              <a href="https://x.com/" class="text-white me-3" style="text-decoration: none;"><i class="fa-brands fa-x-twitter fa-lg"></i> Twitter</a>
+            </div>
+        </div>
+    </div>
+    
+	
+</body>
+</html>
